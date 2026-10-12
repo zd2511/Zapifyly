@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#c88693">
+<meta name="description" content="Zapifyly — beauty, self-care and everyday confidence. Discover makeup, skincare, fragrance and beauty essentials.">
+<title>Zapifyly | Beauty & More</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="announcement">
+  <button class="announce-arrow" aria-label="Previous announcement">‹</button>
+  <span id="announcementText">✦ Free Shipping on Orders Over R750 | 30-Day Easy Returns ✦</span>
+  <button class="announce-arrow" aria-label="Next announcement">›</button>
+</div>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="Zapifyly home"><span>Zapifyly <span class="brand-heart">♡</span></span><small>BEAUTY &amp; MORE</small></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+  <nav class="main-nav" id="mainNav">
+    <a class="active" href="#home">Home</a><a href="#shop">Shop</a><a href="#collections">Collections</a><a href="#about">About</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="Search for beauty..." aria-label="Search products"><button aria-label="Search">⌕</button></form>
+    <button class="icon-button" aria-label="Your account" title="Account">♙</button>
+    <button class="bag-button" id="bagButton" aria-label="Shopping bag">♧<span class="bag-count" id="bagCount">0</span></button>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <img class="hero-photo" src="assets/hero-beauty.jpg" alt="Beauty editorial portrait with a soft pink background">
+  <div class="hero-wash"></div>
+  <div class="hero-copy">
+    <p class="eyebrow">BEAUTY · SELF CARE · CONFIDENCE</p>
+    <h1>Your Beauty<br><span>Our Priority</span><i>♡</i></h1>
+    <p class="hero-description">Discover feel-good makeup, skincare and beauty essentials to help you look and feel your best — every day.</p>
+    <a class="pill-button" href="#shop">Shop Now <span>→</span></a>
+    <div class="hero-dots" aria-label="Hero slides"><button class="dot selected" aria-label="Slide 1"></button><button class="dot" aria-label="Slide 2"></button><button class="dot" aria-label="Slide 3"></button><button class="dot" aria-label="Slide 4"></button></div>
+  </div>
+  <div class="hero-note">Look<br>Good<br>Feel<br>Good <span>♡</span></div>
+</section>
+<section class="categories" id="collections">
+  <a class="category" href="#shop"><span class="category-image"><img src="assets/makeup-brush-set.jpg" alt="Makeup brushes"></span><b>Makeup</b><small>Shop Now <span>→</span></small></a>
+  <a class="category" href="#shop"><span class="category-image"><img src="assets/skincare-glow-set.jpg" alt="Skincare bottles"></span><b>Skincare</b><small>Shop Now <span>→</span></small></a>
+  <a class="category" href="#shop"><span class="category-image"><img src="assets/rose-perfume.jpg" alt="Pink perfume"></span><b>Fragrance</b><small>Shop Now <span>→</span></small></a>
+  <a class="category" href="#shop"><span class="category-image"><img src="assets/beauty-tools.jpg" alt="Beauty tools"></span><b>Hair Accessories</b><small>Shop Now <span>→</span></small></a>
+  <a class="category" href="#shop"><span class="category-image"><img src="assets/lip-gloss-set.jpg" alt="Lip gloss"></span><b>Nails &amp; Lips</b><small>Shop Now <span>→</span></small></a>
+  <a class="category" href="#shop"><span class="category-image"><img src="assets/press-on-nails.jpg" alt="Pink press-on nails"></span><b>Beauty Tools</b><small>Shop Now <span>→</span></small></a>
+</section>
+<section class="benefits" aria-label="Shopping benefits">
+  <div class="benefit"><span class="line-icon">♧</span><div><b>Free Shipping</b><small>On orders over R750</small></div></div>
+  <div class="benefit"><span class="line-icon">♧</span><div><b>Secure Payments</b><small>100% safe &amp; secure</small></div></div>
+  <div class="benefit"><span class="line-icon">♡</span><div><b>30-Day Returns</b><small>Hassle free shopping</small></div></div>
+  <div class="benefit"><span class="line-icon">♧</span><div><b>Friendly Support</b><small>We're here to help</small></div></div>
+</section>
+<section class="products-section page-width" id="shop">
+  <div class="section-heading"><div><p class="script-label">Our Favourites ♡</p><h2>Best Sellers</h2></div><a class="view-all" href="#shop">View All <span>→</span></a></div>
+  <div class="product-grid" id="productGrid">
+    <article class="product-card" data-name="makeup brush set"><div class="product-image"><img src="assets/makeup-brush-set.jpg" alt="Rose gold makeup brush set"><span class="sale-badge">-20%</span><button class="quick-add" data-product="Makeup Brush Set" data-price="249" aria-label="Add Makeup Brush Set to bag">+</button></div><div class="product-info"><h3>Makeup Brush Set</h3><p class="product-subtitle">(12 Pcs)</p><div class="rating"><span>★★★★★</span> <small>(124)</small></div><div class="price"><strong>R199</strong><del>R249</del></div></div></article>
+    <article class="product-card" data-name="skincare glow set"><div class="product-image"><img src="assets/skincare-glow-set.jpg" alt="Pink skincare glow set"><span class="sale-badge">-15%</span><button class="quick-add" data-product="Skincare Glow Set" data-price="335" aria-label="Add Skincare Glow Set to bag">+</button></div><div class="product-info"><h3>Skincare Glow Set</h3><p class="product-subtitle">(4 Pcs)</p><div class="rating"><span>★★★★★</span> <small>(98)</small></div><div class="price"><strong>R285</strong><del>R335</del></div></div></article>
+    <article class="product-card" data-name="matte lip gloss set"><div class="product-image"><img src="assets/lip-gloss-set.jpg" alt="Set of rose toned lip glosses"><span class="sale-badge">-25%</span><button class="quick-add" data-product="Matte Lip Gloss Set" data-price="199" aria-label="Add Matte Lip Gloss Set to bag">+</button></div><div class="product-info"><h3>Matte Lip Gloss Set</h3><p class="product-subtitle">(6 Colours)</p><div class="rating"><span>★★★★★</span> <small>(76)</small></div><div class="price"><strong>R149</strong><del>R199</del></div></div></article>
+    <article class="product-card" data-name="press on nails set"><div class="product-image"><img src="assets/press-on-nails.jpg" alt="Decorated pink press-on nails"><span class="sale-badge">-16%</span><button class="quick-add" data-product="Press On Nails Set" data-price="149" aria-label="Add Press On Nails Set to bag">+</button></div><div class="product-info"><h3>Press-On Nails Set</h3><p class="product-subtitle">(24 Pcs)</p><div class="rating"><span>★★★★★</span> <small>(112)</small></div><div class="price"><strong>R125</strong><del>R149</del></div></div></article>
+  </div>
+  <div class="promo-grid">
+    <article class="promo-card promo-makeup"><img src="assets/makeup-brush-set.jpg" alt="Makeup essentials"><div><h3>Makeup Essentials</h3><p>Everything you need for<br>a flawless look.</p><a class="pill-button small" href="#shop">Shop Makeup <span>→</span></a></div></article>
+    <article class="promo-card promo-skincare"><img src="assets/skincare-glow-set.jpg" alt="Skincare collection"><div><h3>Skincare Collection</h3><p>Healthy skin is always<br>in style.</p><a class="pill-button small" href="#shop">Shop Skincare <span>→</span></a></div></article>
+  </div>
+</section>
+<section class="newsletter" id="about"><div class="newsletter-copy"><p class="script-label">Stay in the loop ♡</p><p>Be the first to know about new arrivals, exclusive offers<br class="desktop-only"> and beauty tips!</p></div><form id="newsletterForm" class="newsletter-form"><input type="email" placeholder="Your email address" aria-label="Your email address" required><button type="submit">Subscribe <span>→</span></button><small id="newsletterMessage" aria-live="polite"></small></form><span class="newsletter-heart">♡</span></section>
+</main>
+<footer class="footer" id="contact">
+  <div class="footer-brand"><a class="brand light" href="#home"><span>Zapifyly <span class="brand-heart">♡</span></span><small>BEAUTY &amp; MORE</small></a><p>Your little corner for beauty, self-care<br>and everyday confidence.</p></div>
+  <div class="footer-column"><h4>Quick Links</h4><a href="#shop">Shop</a><a href="#collections">Collections</a><a href="#about">About Us</a><a href="#contact">Contact</a></div>
+  <div class="footer-column"><h4>Customer Care</h4><a href="#contact">FAQs</a><a href="#contact">Shipping &amp; Returns</a><a href="#contact">Privacy Policy</a><a href="#contact">Terms &amp; Conditions</a></div>
+  <div class="footer-column follow"><h4>Follow Us</h4><div class="socials"><a href="#contact" aria-label="Instagram">◎</a><a href="#contact" aria-label="Pinterest">℘</a><a href="#contact" aria-label="Facebook">f</a><a href="#contact" aria-label="TikTok">♪</a><a href="#contact" aria-label="YouTube">▶</a></div><p>Beauty looks good on you. ♡</p></div>
+  <div class="footer-bottom"><span>© <span id="year"></span> Zapifyly. All rights reserved.</span><span>Made with love ♡</span></div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
